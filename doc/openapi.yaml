@@ -1,0 +1,38 @@
+---
+openapi: 3.0.3
+info:
+  title: rspec-openapi-sample
+paths:
+  "/api/posts":
+    get:
+      summary: 'api/posts #index'
+      parameters:
+      - name: format
+        in: path
+        required: true
+        schema:
+          type: string
+        example: json
+      - name: title
+        in: query
+        schema:
+          type: string
+        example: f
+      responses:
+        '200':
+          description: get posts
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  posts:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        title:
+                          type: string
+              example:
+                posts:
+                - title: foo
