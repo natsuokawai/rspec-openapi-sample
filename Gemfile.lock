@@ -153,7 +153,7 @@ GEM
     rspec-mocks (3.9.1)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.9.0)
-    rspec-openapi (0.3.3)
+    rspec-openapi (0.3.9)
       actionpack
       rspec
     rspec-rails (4.0.1)
