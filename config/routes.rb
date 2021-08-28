@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   namespace :api, format: 'json' do
     resources :posts, only: %i(index)
   end
+
+  get 'swagger_ui', to: 'swagger_ui#show'
 end
