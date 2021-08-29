@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   end
 
   get 'swagger_ui', to: 'swagger_ui#show'
+  get 'swagger_ui/doc', to: 'swagger_ui#doc'
 end
